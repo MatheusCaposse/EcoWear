@@ -1,0 +1,68 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    ". logo logo logo ."
+    ". home todosProduto contato ."
+    ". carrinho . user ."
+    ;
+    gap: 20px;
+}
+
+.logo{
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.home{
+    grid-area: home;
+    align-self: center;
+    justify-self: center;
+}
+
+.todosProduto{
+    grid-area: todosProduto;
+    align-self: center;
+    justify-self: center;
+}
+
+.contato{
+    grid-area: contato;
+    align-self: center;
+    justify-self: center;
+}
+
+.carrinho{
+    grid-area: carrinho;
+    align-self: center;
+    justify-self: center;
+}
+
+.user{
+    grid-area: user;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        ". logo logo logo ."
+        "home todosProduto contato carrinho user"
+        ;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-areas: 
+        "logo home todosProduto todosProduto todosProduto contato   . . . . . . . . . . . . carrinho user"
+        ;
+    }
+    
+}

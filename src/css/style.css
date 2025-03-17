@@ -1,0 +1,72 @@
+header{
+    border-bottom: 1px solid gray;
+}
+
+header>*{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 20px;
+}
+
+.home:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.todosProduto:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.contato:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+.promo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.promo-image {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.promo-info {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.promo-price {
+    font-size: 1.8rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.about-text {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bb9469; /* Verde mais claro */
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: gray;
+    margin-top: 20px;
+}

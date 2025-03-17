@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+
+header {
+  background-color: white;
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+  }
+  
+  header nav ul li {
+    margin: 0; 
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+ 
+  .product-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 10%;
+    gap: 40px;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    max-width: 500px;
+  }
+  
+  .product-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.8em;
+    color: #e60000;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #218838;
+  }
+  
+ 
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #5a5a5a9c;
+    color: #fff;
+  }
+
+  @media (max-width: 1024px) {
+    .product-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .product-info {
+      max-width: 100%;
+    }
+  
+    .product-image img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    header a {
+      margin-bottom: 10px;
+    }
+  
+    .product-image img {
+      max-width: 100%;
+    }
+  
+    .buy-button {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    footer {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      text-align: center;
+    }
+  
+    .product-details {
+      padding: 20px;
+    }
+  
+    .product-info h1 {
+      font-size: 1.5em;
+    }
+  
+    .price {
+      font-size: 1.5em;
+    }
+  
+    .description {
+      font-size: 1em;
+    }
+  
+    .buy-button {
+      font-size: 1em;
+      padding: 10px;
+    }
+  }
+  
+  
